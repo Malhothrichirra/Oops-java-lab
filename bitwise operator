@@ -1,1 +1,9 @@
+public class Main {
+public static void main(String[] args) {
+int a = 10; // Binary: 1010
+int b = 20; // Binary: 10100
 
+int result = a & b; // Perform bitwise AND
+System.out.println("a & b = " + result); // Output: 0
+}
+}
