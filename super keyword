@@ -1,1 +1,13 @@
+class Animal {
+    Animal() {
+        System.out.println("Animal constructor");
+    }
+}
+
+class Dog extends Animal {
+    Dog() {
+        super();  // Calls Animal's constructor
+        System.out.println("Dog constructor");
+    }
+}
 
