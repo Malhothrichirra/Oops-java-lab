@@ -1,1 +1,33 @@
+import java.util.Scanner;
+
+	public class evenoddsum {
+
+	    public static void main(String[] args) {
+	        Scanner input = new Scanner(System.in);
+
+	        System.out.print("Enter the number of integers you want to process: ");
+	        int count = input.nextInt();
+
+	        int sumEven = 0;
+	        int sumOdd = 0;
+
+	        System.out.println("Enter " + count + " integers:");
+
+	        for (int i = 0; i < count; i++) {
+	            int number = input.nextInt();
+
+	            if (number % 2 == 0) {
+	                sumEven += number; // Add to even sum if divisible by 2
+	            } else {
+	                sumOdd += number;  // Add to odd sum otherwise
+	            }
+	        }
+
+	        System.out.println("Sum of even integers: " + sumEven);
+	        System.out.println("Sum of odd integers: " + sumOdd);
+
+	        input.close(); // Close the scanner to release system resources
+	    }
+	}
+
 
