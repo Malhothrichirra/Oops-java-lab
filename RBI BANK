@@ -1,1 +1,27 @@
+class RBI {
+    private double baseInterestRate = 6.5;
+
+    // Private method to calculate interest (internal logic)
+    private double calculateInterest(double principal, int years) {
+        return (principal * baseInterestRate * years) / 100;
+    }
+
+    // Public method to show interest, uses the private method internally
+    public void showInterest(double principal, int years) {
+        double interest = calculateInterest(principal, years);
+        System.out.println("Interest on Rs." + principal + " for " + years + " years is: Rs." + interest);
+    }
+}
+
+public class BankDemo {
+    public static void main(String[] args) {
+        RBI rbi = new RBI();
+
+        // Can call public method
+        rbi.showInterest(10000, 3);
+
+        // Can't call private method directly - below line would cause error
+        // rbi.calculateInterest(10000, 3);  // Error: calculateInterest() has private access in RBI
+    }
+}
 
