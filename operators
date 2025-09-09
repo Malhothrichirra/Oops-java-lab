@@ -1,1 +1,31 @@
+public class OperatorDemo {
+    public static void main(String[] args) {
+        int a = 10, b = 3;
+
+        // Arithmetic Operators
+        System.out.println("a + b = " + (a + b));  // 13
+        System.out.println("a - b = " + (a - b));  // 7
+        System.out.println("a * b = " + (a * b));  // 30
+        System.out.println("a / b = " + (a / b));  // 3 (integer division)
+        System.out.println("a % b = " + (a % b));  // 1 (remainder)
+
+        // Relational Operators
+        System.out.println("a == b? " + (a == b));  // false
+        System.out.println("a != b? " + (a != b));  // true
+        System.out.println("a > b? " + (a > b));    // true
+        System.out.println("a <= b? " + (a <= b));  // false
+
+        // Logical Operators
+        boolean result = (a > 5) && (b < 5);
+        System.out.println("(a > 5) && (b < 5)? " + result);  // true
+
+        // Assignment Operators
+        a += 5;  // a = a + 5
+        System.out.println("a after a += 5: " + a);  // 15
+
+        // Ternary Operator
+        int max = (a > b) ? a : b;
+        System.out.println("Max value is: " + max);  // 15
+    }
+}
 
