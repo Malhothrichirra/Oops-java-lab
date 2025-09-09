@@ -1,1 +1,31 @@
+public class TypeCastingDemo {
+    public static void main(String[] args) {
+        // Implicit casting
+        int i = 50;
+        double d = i;  // int to double
+        System.out.println("Implicit casting int to double: " + d);
+
+        // Explicit casting
+        double num = 45.67;
+        int numInt = (int) num;  // double to int
+        System.out.println("Explicit casting double to int: " + numInt);
+
+        // Casting objects
+        Animal animal = new Dog();  // Upcasting
+        Dog dog = (Dog) animal;     // Downcasting
+        dog.bark();
+    }
+}
+
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}
 
