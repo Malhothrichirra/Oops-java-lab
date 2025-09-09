@@ -1,1 +1,27 @@
+class Animal {
+    String name;
+
+    // Parameterized constructor
+    Animal(String name) {
+        this.name = name;
+        System.out.println("Animal constructor called: " + name);
+    }
+}
+
+class Dog extends Animal {
+    int age;
+
+    // Subclass constructor calls superclass constructor with parameter
+    Dog(String name, int age) {
+        super(name);  // Calls Animal(String name)
+        this.age = age;
+        System.out.println("Dog constructor called: " + age);
+    }
+}
+
+public class SuperWithParameters {
+    public static void main(String[] args) {
+        Dog myDog = new Dog("Buddy", 5);
+    }
+}
 
