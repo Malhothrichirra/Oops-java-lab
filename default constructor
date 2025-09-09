@@ -1,1 +1,13 @@
+public class Car {
+    String model;
+    int year;
+    
+    // No constructor defined by user
+    
+    public static void main(String[] args) {
+        Car myCar = new Car();  // default constructor is called here
+        System.out.println(myCar.model);  // prints null
+        System.out.println(myCar.year);   // prints 0
+    }
+}
 
