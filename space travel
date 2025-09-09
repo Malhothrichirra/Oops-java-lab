@@ -1,1 +1,21 @@
 
+public class SpaceTravel {
+    public static void main(String[] args) throws InterruptedException {
+        String spaceship = "🚀";
+        int spaceLength = 30;  // how far the spaceship travels
+
+        for (int i = 0; i < spaceLength; i++) {
+            // Print spaces to simulate movement
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+
+            System.out.print(spaceship);
+            System.out.print("\r");  // carriage return to overwrite the line
+
+            Thread.sleep(200);  // pause for 200 milliseconds
+        }
+
+        System.out.println("\nSpace travel complete!");
+    }
+}
