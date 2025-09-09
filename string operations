@@ -1,1 +1,16 @@
+public class StringOpsDemo {
+    public static void main(String[] args) {
+        String s = "Hello World";
+
+        System.out.println("Length: " + s.length());
+        System.out.println("Uppercase: " + s.toUpperCase());
+        System.out.println("Substring (0-5): " + s.substring(0, 5));
+        System.out.println("Replace 'World' with 'Java': " + s.replace("World", "Java"));
+        System.out.println("Index of 'o': " + s.indexOf('o'));
+        System.out.println("Split by space:");
+        for (String part : s.split(" ")) {
+            System.out.println(part);
+        }
+    }
+}
 
